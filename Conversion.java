@@ -16,19 +16,19 @@ public class Conversion {
         switch(option) {
             case 1:
                 money = ConvertUStoCN(input, ChineseYuan);
-                System.out.printf("CN ¥ %.2f", money);
+                System.out.printf("CN ¥%.2f\n", money);
                 break;
             case 2:
                 money = ConvertUSto(input);
-                System.out.printf("%.2f", money);
+                System.out.printf("%.2f\n", money);
                 break;
             case 3:
                 money = ConvertCNtoUS(input, ChineseYuan);
-                System.out.printf("US $ %.2f", money);
+                System.out.printf("US $%.2f\n", money);
                 break;
             case 4:
                 money = ConverttoUS(input);
-                System.out.printf("US $ %.2f", money);
+                System.out.printf("US $%.2f\n", money);
                 break;
             default:
                 System.out.println("Invalid option");
