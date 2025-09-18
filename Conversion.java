@@ -33,6 +33,7 @@ public class Conversion {
             default:
                 System.out.println("Invalid option");
         }
+        input.close();
     }
 
     /**
