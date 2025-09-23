@@ -19,11 +19,14 @@ public class Conversion {
             double money = 0;
             // System.out.println(option);
             switch (option) {
+                // case 0:
+                // option = menu(input);
+                // break;
                 case 1:
                     money = ConvertUStoCN(input, ChineseYuan);
                     System.out.printf("You got CN ¥%.2f\n", money);
-                    System.out.println("Enter 0 to continue the program.");
-                    if (!input.hasNextInt() && option != 0) {
+                    System.out.println("Enter 0 to continue the program. Any other value quits the program.");
+                    if ((!input.hasNextInt()) && (option != 0)) {
                         // System.out.println("Quitting program...");
                         option = 5;
                     } else {
@@ -33,8 +36,8 @@ public class Conversion {
                 case 2:
                     money = ConvertUSto(input, BLANK);
                     System.out.printf("You got %.2f\n", money);
-                    System.out.println("Enter 0 to continue the program.");
-                    if (!input.hasNextInt() && option != 0) {
+                    System.out.println("Enter 0 to continue the program. Any other value quits the program.");
+                    if ((!input.hasNextInt()) && (option != 0)) {
                         // System.out.println("Quitting program...");
                         option = 5;
                     } else {
@@ -44,8 +47,8 @@ public class Conversion {
                 case 3:
                     money = ConvertCNtoUS(input, ChineseYuan);
                     System.out.printf("You got US $%.2f\n", money);
-                    System.out.println("Enter 0 to continue the program.");
-                    if (!input.hasNextInt() && option != 0) {
+                    System.out.println("Enter 0 to continue the program. Any other value quits the program.");
+                    if ((!input.hasNextInt()) && (option != 0)) {
                         // System.out.println("Quitting program...");
                         option = 5;
                     } else {
@@ -55,8 +58,8 @@ public class Conversion {
                 case 4:
                     money = ConverttoUS(input, BLANK);
                     System.out.printf("You got US $%.2f\n", money);
-                    System.out.println("Enter 0 to continue the program.");
-                    if (!input.hasNextInt() && option != 0) {
+                    System.out.println("Enter 0 to continue the program. Any other value quits the program.");
+                    if ((!input.hasNextInt()) && (option != 0)) {
                         // System.out.println("Quitting program...");
                         option = 5;
                     } else {
