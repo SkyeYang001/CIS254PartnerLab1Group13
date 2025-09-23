@@ -4,12 +4,12 @@ import java.util.Scanner;
  * Lab 1: Converts Currency
  * 
  * @author Skye Yang and Jonah Martin
- * Partner has finished coding yet...
+ * Partner Jonah Martin has finished coding yet...
  */
 public class Conversion {
 
     /**
-     * This is the main method 
+     * This is the main method (Skye Yang)
      * 
      * @param args
      */
@@ -111,7 +111,7 @@ public class Conversion {
     }
 
     /**
-     * This method converts US Dollars to Chinese Yuan
+     * This method converts US Dollars to Chinese Yuan (Skye Yang)
      * 
      * @param input
      * @param ChineseYuan
@@ -138,7 +138,7 @@ public class Conversion {
     }
 
     /**
-     * This method converts US Dollars to
+     * This method converts US Dollars to (Jonah Martin)
      * 
      * @param input
      * @return Converted
@@ -148,7 +148,7 @@ public class Conversion {
     }
 
     /**
-     * This method converts to Chinese Yuan
+     * This method converts to Chinese Yuan (Skye Yang)
      * 
      * @param input
      * @param ChineseYuan
@@ -175,7 +175,7 @@ public class Conversion {
     }
 
     /**
-     * This method converts to
+     * This method converts to (Jonah Martin)
      * 
      * @param scanner 
      * @return Converted US Dollars
