@@ -24,7 +24,7 @@ public class Conversion {
                     System.out.printf("You got CN ¥%.2f\n", money);
                     System.out.println("Enter 0 to continue the program.");
                     if (!input.hasNextInt() && option != 0) {
-                        System.out.println("Quitting program...");
+                        // System.out.println("Quitting program...");
                         option = 5;
                     } else {
                         option = input.nextInt();
@@ -35,7 +35,7 @@ public class Conversion {
                     System.out.printf("You got %.2f\n", money);
                     System.out.println("Enter 0 to continue the program.");
                     if (!input.hasNextInt() && option != 0) {
-                        System.out.println("Quitting program...");
+                        // System.out.println("Quitting program...");
                         option = 5;
                     } else {
                         option = input.nextInt();
@@ -46,7 +46,7 @@ public class Conversion {
                     System.out.printf("You got US $%.2f\n", money);
                     System.out.println("Enter 0 to continue the program.");
                     if (!input.hasNextInt() && option != 0) {
-                        System.out.println("Quitting program...");
+                        // System.out.println("Quitting program...");
                         option = 5;
                     } else {
                         option = input.nextInt();
@@ -57,12 +57,13 @@ public class Conversion {
                     System.out.printf("You got US $%.2f\n", money);
                     System.out.println("Enter 0 to continue the program.");
                     if (!input.hasNextInt() && option != 0) {
-                        System.out.println("Quitting program...");
+                        // System.out.println("Quitting program...");
                         option = 5;
                     } else {
                         option = input.nextInt();
                     }
                     break;
+                case 5:
                 default:
                     System.out.println("Quitting program...");
             }
