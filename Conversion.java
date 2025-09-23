@@ -22,32 +22,52 @@ public class Conversion {
                 case 1:
                     money = ConvertUStoCN(input, ChineseYuan);
                     System.out.printf("You got CN ¥%.2f\n", money);
-                    option = 0;
-                    // input.next();
+                    System.out.println("Enter 0 to continue the program.");
+                    if (!input.hasNextInt() && option != 0) {
+                        System.out.println("Quitting program...");
+                        option = 5;
+                    } else {
+                        option = input.nextInt();
+                    }
                     break;
                 case 2:
                     money = ConvertUSto(input, BLANK);
                     System.out.printf("You got %.2f\n", money);
-                    option = 0;
-                    // input.next();
+                    System.out.println("Enter 0 to continue the program.");
+                    if (!input.hasNextInt() && option != 0) {
+                        System.out.println("Quitting program...");
+                        option = 5;
+                    } else {
+                        option = input.nextInt();
+                    }
                     break;
                 case 3:
                     money = ConvertCNtoUS(input, ChineseYuan);
                     System.out.printf("You got US $%.2f\n", money);
-                    option = 0;
-                    // input.next();
+                    System.out.println("Enter 0 to continue the program.");
+                    if (!input.hasNextInt() && option != 0) {
+                        System.out.println("Quitting program...");
+                        option = 5;
+                    } else {
+                        option = input.nextInt();
+                    }
                     break;
                 case 4:
                     money = ConverttoUS(input, BLANK);
                     System.out.printf("You got US $%.2f\n", money);
-                    option = 0;
-                    // input.next();
+                    System.out.println("Enter 0 to continue the program.");
+                    if (!input.hasNextInt() && option != 0) {
+                        System.out.println("Quitting program...");
+                        option = 5;
+                    } else {
+                        option = input.nextInt();
+                    }
                     break;
                 default:
                     System.out.println("Quitting program...");
-                    input.close();
             }
         }
+        input.close();
     }
 
     /**
