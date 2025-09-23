@@ -5,6 +5,8 @@ import java.util.Scanner;
  * 
  * @author Skye Yang and Jonah Martin
  * Partner Jonah Martin has finished coding yet...
+ * Github Repository Here:
+ * https://github.com/SkyeYang001/CIS254PartnerLab1Group13
  */
 public class Conversion {
 
