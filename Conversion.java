@@ -4,6 +4,7 @@ import java.util.Scanner;
  * Lab 1: Converts Currency
  * 
  * @author Skye Yang and Jonah Martin
+ * Partner has finished coding yet...
  */
 public class Conversion {
 
