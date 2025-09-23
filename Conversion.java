@@ -1,12 +1,17 @@
 import java.util.Scanner;
 
 /**
- * Lab 1: write a brief description here
+ * Lab 1: Converts Currency
  * 
- * @author Skye Yang
- * @author Jonah Martin
+ * @author Skye Yang and Jonah Martin
  */
 public class Conversion {
+
+    /**
+     * This is the main method 
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("This program lets you choice which currency to convert.");
         Scanner input = new Scanner(System.in);
@@ -23,7 +28,7 @@ public class Conversion {
                 // option = menu(input);
                 // break;
                 case 1:
-                    money = ConvertUStoCN(input, ChineseYuan);
+                    money = convertUStoCN(input, ChineseYuan);
                     System.out.printf("You got CN ¥%.2f\n", money);
                     System.out.println("Enter 0 to continue the program. Any other value quits the program.");
                     if ((!input.hasNextInt()) && (option != 0)) {
@@ -34,7 +39,7 @@ public class Conversion {
                     }
                     break;
                 case 2:
-                    money = ConvertUSto(input, BLANK);
+                    money = convertUSto(input, BLANK);
                     System.out.printf("You got %.2f\n", money);
                     System.out.println("Enter 0 to continue the program. Any other value quits the program.");
                     if ((!input.hasNextInt()) && (option != 0)) {
@@ -45,7 +50,7 @@ public class Conversion {
                     }
                     break;
                 case 3:
-                    money = ConvertCNtoUS(input, ChineseYuan);
+                    money = convertCNtoUS(input, ChineseYuan);
                     System.out.printf("You got US $%.2f\n", money);
                     System.out.println("Enter 0 to continue the program. Any other value quits the program.");
                     if ((!input.hasNextInt()) && (option != 0)) {
@@ -56,7 +61,7 @@ public class Conversion {
                     }
                     break;
                 case 4:
-                    money = ConverttoUS(input, BLANK);
+                    money = converttoUS(input, BLANK);
                     System.out.printf("You got US $%.2f\n", money);
                     System.out.println("Enter 0 to continue the program. Any other value quits the program.");
                     if ((!input.hasNextInt()) && (option != 0)) {
@@ -77,7 +82,7 @@ public class Conversion {
     /**
      * This method opens the menu for the user to choose an option
      * 
-     * @param scanner input
+     * @param scanner
      * @return User's inputted option
      */
     public static int menu(Scanner input) {
@@ -107,11 +112,11 @@ public class Conversion {
     /**
      * This method converts US Dollars to Chinese Yuan
      * 
-     * @param scanner     input
-     * @param ChineseYuan double
+     * @param input
+     * @param ChineseYuan
      * @return Converted Chinese Yuan
      */
-    public static double ConvertUStoCN(Scanner input, double ChineseYuan) {
+    public static double convertUStoCN(Scanner input, double ChineseYuan) {
         double value = -1;
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("1. US Dollar -> Chinese Yuan");
@@ -134,21 +139,21 @@ public class Conversion {
     /**
      * This method converts US Dollars to
      * 
-     * @param scanner input
+     * @param input
      * @return Converted
      */
-    public static double ConvertUSto(Scanner input, double BLANK) {
+    public static double convertUSto(Scanner input, double BLANK) {
         return 0;
     }
 
     /**
      * This method converts to Chinese Yuan
      * 
-     * @param scanner     input
-     * @param ChineseYuan double
+     * @param input
+     * @param ChineseYuan
      * @return Converted US Dollars
      */
-    public static double ConvertCNtoUS(Scanner input, double ChineseYuan) {
+    public static double convertCNtoUS(Scanner input, double ChineseYuan) {
         double value = -1;
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("3. Chinese Yuan -> US Dollar");
@@ -171,10 +176,9 @@ public class Conversion {
     /**
      * This method converts to
      * 
-     * @param scanner input
+     * @param scanner 
      * @return Converted US Dollars
-     */
-    public static double ConverttoUS(Scanner input, Double BLANK) {
+     */    public static double converttoUS(Scanner input, Double BLANK) {
         return 0;
     }
 }
