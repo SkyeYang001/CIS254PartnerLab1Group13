@@ -2,14 +2,13 @@ import java.util.Scanner;
 
 /**
  * Lab 1: This is a simple program that converts USD to Euros and Yuan
- * 
  * @author Jonah Martin
  * @author Skye Yang
+ * https://github.com/SkyeYang001/CIS254PartnerLab1Group13
  */
 public class Conversion {
     /**
      * Prints a welcome message to the user and explains what the program does
-     * 
      * @author Jonah
      * @author Skye
      */
@@ -97,7 +96,6 @@ public class Conversion {
 
     /**
      * Converts Yuan to USD
-     * 
      * @author Skye
      * @param amount of Yuan and Yuan converison
      * @return amount of USD
